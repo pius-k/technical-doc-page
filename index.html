@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <link rel="stylesheet" href="cssfiles/index.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <h3>CSS Tutorial</h3>
+        <ul>
+            <li><a href="index.html">CSS HOME</a></li>
+            <li><a href="webpages/cssintroduction.html">CSS Introduction</a></li>
+            <li><a href="/webpages/csssyntax.html">CSS Syntax</a></li>
+            <li><a href="/webpages/cssselectors.html">CSS Selectors</a></li>
+            <li><a href="#how-to">CSS How To</a></li>
+            <li><a href="#comments">CSS Comments</a></li>
+            <li><a href="#colors">CSS Colors</a></li>
+            <li><a href="#backgrounds">CSS Backgrounds</a></li>
+            <li><a href="#borders">CSS Borders</a></li>
+            <li><a href="#margins">CSS Margins</a></li>
+            <li><a href="#padding">CSS Padding</a></li>
+            <li><a href="#height-width">CSS Height/Width</a></li>
+            <li><a href="#box-model">CSS Box Model</a></li>
+            <li><a href="#outline">CSS Outline</a></li>
+            <li><a href="#text">CSS Text</a></li>
+            <li><a href="#fonts">CSS Fonts</a></li>
+            <li><a href="#icons">CSS Icons</a></li>
+            <li><a href="#links">CSS Links</a></li>
+            <li><a href="#lists">CSS Lists</a></li>
+            <li><a href="#tables">CSS Tables</a></li>
+            <li><a href="#display">CSS Display</a></li>
+            <li><a href="#max-width">CSS Max-width</a></li>
+            <li><a href="#position">CSS Position</a></li>
+            <li><a href="#overflow">CSS Overflow</a></li>
+            <li><a href="#float">CSS Float</a></li>
+            <li><a href="#inline-block">CSS Inline-block</a></li>
+            <li><a href="#align">CSS Align</a></li>
+            <li><a href="#combinators">CSS Combinators</a></li>
+            <li><a href="#pseudo-class">CSS Pseudo-class</a></li>
+            <li><a href="#pseudo-elements">CSS Pseudo-elements</a></li>
+            <li><a href="#opacity">CSS Opacity</a></li>
+            <li><a href="#navigation-bar">CSS Navigation Bar</a></li>
+            <li><a href="#dropdowns">CSS Dropdowns</a></li>
+            <li><a href="#image-gallery">CSS Image Gallery</a></li>
+            <li><a href="#image-sprites">CSS Image Sprites</a></li>
+            <li><a href="#attr-selectors">CSS Attr Selectors</a></li>
+            <li><a href="#forms">CSS Forms</a></li>
+            <li><a href="#counters">CSS Counters</a></li>
+            <li><a href="#website-layout">CSS Website Layout</a></li>
+            <li><a href="#units">CSS Units</a></li>
+            <li><a href="#specificity">CSS Specificity</a></li>
+            <li><a href="#reference">Reference</a></li>
+
+        </ul>
+    </nav>
+
+    <nav id="navbar">
+        <h3>CSS Tutorial</h3>
+        <ul>
+            <li><a href="#home">CSS HOME</a></li>
+            <li><a href="#introduction">CSS Introduction</a></li>
+            <li><a href="#syntax">CSS Syntax</a></li>
+            <li><a href="#selectors">CSS Selectors</a></li>
+            <li><a href="#how-to">CSS How To</a></li>
+            <li><a href="#comments">CSS Comments</a></li>
+            <li><a href="#colors">CSS Colors</a></li>
+            <li><a href="#backgrounds">CSS Backgrounds</a></li>
+            <li><a href="#borders">CSS Borders</a></li>
+            <li><a href="#margins">CSS Margins</a></li>
+            <li><a href="#padding">CSS Padding</a></li>
+            <li><a href="#height-width">CSS Height/Width</a></li>
+            <li><a href="#box-model">CSS Box Model</a></li>
+            <li><a href="#outline">CSS Outline</a></li>
+            <li><a href="#text">CSS Text</a></li>
+            <li><a href="#fonts">CSS Fonts</a></li>
+            <li><a href="#icons">CSS Icons</a></li>
+            <li><a href="#links">CSS Links</a></li>
+            <li><a href="#lists">CSS Lists</a></li>
+            <li><a href="#tables">CSS Tables</a></li>
+            <li><a href="#display">CSS Display</a></li>
+            <li><a href="#max-width">CSS Max-width</a></li>
+            <li><a href="#position">CSS Position</a></li>
+            <li><a href="#overflow">CSS Overflow</a></li>
+            <li><a href="#float">CSS Float</a></li>
+            <li><a href="#inline-block">CSS Inline-block</a></li>
+            <li><a href="#align">CSS Align</a></li>
+            <li><a href="#combinators">CSS Combinators</a></li>
+            <li><a href="#pseudo-class">CSS Pseudo-class</a></li>
+            <li><a href="#pseudo-elements">CSS Pseudo-elements</a></li>
+            <li><a href="#opacity">CSS Opacity</a></li>
+            <li><a href="#navigation-bar">CSS Navigation Bar</a></li>
+            <li><a href="#dropdowns">CSS Dropdowns</a></li>
+            <li><a href="#image-gallery">CSS Image Gallery</a></li>
+            <li><a href="#image-sprites">CSS Image Sprites</a></li>
+            <li><a href="#attr-selectors">CSS Attr Selectors</a></li>
+            <li><a href="#forms">CSS Forms</a></li>
+            <li><a href="#counters">CSS Counters</a></li>
+            <li><a href="#website-layout">CSS Website Layout</a></li>
+            <li><a href="#units">CSS Units</a></li>
+            <li><a href="#specificity">CSS Specificity</a></li>
+            <li><a href="#reference">Reference</a></li>
+
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <header class="main-section">
+            <h3 id="home">CSS Tutorial</h3>
+            <a class="button pbutton" href="index.html">&#8249; Home</a>
+            <a class="button nbutton" href="webpages/cssintroduction.html">&#276f; Next</a>
+            <br>
+
+            <p class="learn">CSS is a language that describes the style of an HTML document. CSS describes how HTML elements should be displayed. This tutorial will teach you CSS from basic to advanced. <br>
+                <a class="button pbutton start" href="">Start learning CSS now »</a>
+            </p>
+
+            <h4>Examples in Each Chapter</h4>
+            This CSS tutorial contains hundreds of CSS examples. With our online editor, you can edit the CSS, and click on a button to view the result.
+            <div class="example">
+                <p class="examplename"> CSS Example</p>
+                <code>
+                        body { <br> background-color: lightblue; <br> } <br> h1 { <br> color: white; <br> text-align: center;<br> } <br> p { <br> font-family: verdana; <br> font-size: 20px; <br> } <br>
+                    </code><br>
+                <a class="button trybutton" href="">Try it Yourself</a>
+            </div>
+
+            <p class="click">
+                Click on the "Try it Yourself" button to see how it works.
+            </p>
+
+
+            <h4>CSS Examples</h4>
+            Learn from over 300 examples! With our editor, you can edit the CSS, and click on a button to view the result.
+            <a href="" target="_blank">Go to CSS Examples!</a>
+
+            <h4>CSS Templates</h4>
+            We have created some responsive W3.CSS templates for you to use. You are free to modify, save, share, and use them in all your projects.
+            <a href="" target="_blank">Free CSS Templats!</a>
+
+
+            <h4>CSS Exercises and Quiz Test</h4>
+            Test your CSS skills at W3Schools!
+            <form action="" target="_blank">
+                <input type="button">
+            </form>
+            <form action="" target="_blank">
+                <input type="button">
+            </form>
+
+            <p>
+                <h4>CSS References</h4>
+                At W3Schools you will find complete CSS references of all properties and selectors with syntax, examples, browser support, and more. <a href="https://www.w3schools.com/cssref/default.asp" target="_blank">Go to CSS References</a>
+            </p>
+            <p>
+                <h4>CSS Exam - Get Your Diploma!</h4>
+                <p>
+                    <h4>W3Schools' Online Certification</h4>
+                    <p>
+                        The perfect solution for professionals who need to balance work, family, and career building. More than 25 000 certificates already issued!
+                    </p>
+                </p>
+            </p>
+            <p>
+                <form id="cert" action="https://www.w3schools.com/cert/default.asp" target="_blank">
+                    <input for="cert" type="button">
+                </form>
+                The <a href="https://www.w3schools.com/cert/default.asp" target="_blank">CSS Certificate</a> documents your knowledge of advanced CSS.
+            </p>
+
+        </header>
+
+
+        <div class="main-section">
+            <h3 id="how-to">CSS How To</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <p>
+                When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.
+            </p>
+            <p>
+                <h4>Three Ways to Insert CSS</h4>
+                There are three ways of inserting a style sheet:
+                <ul>
+                    <li>External CSS</li>
+                    <li>Internal CSS</li>
+                    <li>Inline CSS</li>
+                </ul>
+            </p>
+            <p>
+                <h4> External CSS</h4>
+                With an external style sheet, you can change the look of an entire website by changing just one file! Each HTML page must include a reference to the external style sheet file inside the &lt;link&gt; element, inside the head section.
+                <p class="example">
+                    Example <br> External styles are defined within the &lt;link&gt; element, inside the &lt;head&gt; section of an HTML
+                    <page:br></page:br>
+                    <code class="code">
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+
+                            &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                            &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;<br>  
+                    </code>
+                    <a class="button trybutton" href="">Try it Yourself</a>
+                </p>
+                An external style sheet can be written in any text editor, and must be saved with a .css extension. The external .css file should not contain any HTML tags. Here is how the "mystyle.css" file looks like:
+                <p class="example">
+                    "mystyle.css"<br>
+                    <code>
+                        body {<br>
+                            background-color: lightblue;<br>
+                          } <br>
+                          <br>
+                          h1 {<br>
+                            color: navy;<br>
+                            margin-left: 20px;<br>
+                          } <br>
+                    </code>
+                </p>
+            </p>
+            <p class="note">
+                Note: Do not add a space between the property value and the unit (such as <code>margin-left: 20 px;</code>). The correct way is: <code>margin-left: 20px;</code>
+
+            </p>
+            <p>
+                <h4>
+                    Internal CSS
+                </h4>
+                An internal style sheet may be used if one single HTML page has a unique style. The internal style is defined inside the <code>&lt;style&gt;</code> element, inside the head section.
+                <p class="example">
+                    Example Internal styles are defined within the<code> &lt;style&gt;</code> element, inside the<code>&lt;head&gt;</code> section of an HTML page: <br> <br>
+                    <code>
+                      &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;style&gt;<br>
+                        body {<br>
+                        background-color: linen;<br>
+                        } <br><br>
+
+                        h1 {<br>
+                        color: maroon;<br>
+                        margin-left: 40px;<br>
+                        } <br>
+                        &lt;/style&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br><br>
+
+                        &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                        &lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
+
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+
+                    </code>
+                    <a class="button trybutton" href="">Try it Yourself</a>
+
+                </p>
+            </p>
+            <p>
+                <h4>
+                    Inline CSS
+                </h4>
+                An inline style may be used to apply a unique style for a single element. To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+                <p class="example">
+                    Inline styles are defined within the <q>style</q> attribute of the relevant <br>
+
+                    <code>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;body&gt;<br><br>
+                        
+                        &lt;h1 style="color:blue;text-align:center;"&gt;This is a heading&lt;/h1&gt;<br>
+                        &lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;<br><br>
+                        
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br><br>
+                    </code>
+                    <a class="button trybutton" href="">Try it Yourself</a>
+                </p>
+            </p>
+            <p class="note">
+                Tip: An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.
+            </p>
+            <p>
+                <h4>Multiple Style Sheets</h4>
+                If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.
+                <p class="example">
+                    Assume that an <strong>external style sheet</strong> has the following style for the &lt;h1&gt; element: <br>
+                    <code>
+                        h1 {<br>
+                            color: navy;<br>
+                          } <br>
+                    </code>
+                </p>
+                <p class="example">
+                    Then, assume that an internal style sheet also has the following style for the &lt;h1&gt; element: <br>
+                    <code>
+                        h1 {<br>
+                            color: orange;<br>
+                        } <br><br>
+                    </code>
+
+                </p>
+                <p class="example">
+                    Example <br> If the internal style is defined after the link to the external style sheet, the &lt;h1&gt; elements will be "orange": <br>
+                    <code>
+                            &lt;head&gt;<br>
+                            &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;<br>
+                            &lt;style&gt;<br>
+                            h1 {<br>
+                              color: orange; <br>
+                            } <br>
+                            &lt;/style&gt; <br>
+                            &lt;/head&gt;
+                    </code>
+                    <a class="button trybutton" href="">Try it Yourself</a>
+                </p>
+                <p class="example">
+                    example <br> If the internal style is defined <strong> after</strong> the link to the external style sheet, the &lt;h1&gt; elements will be <q>orange</q>:
+                    <code>
+                        &lt;head&gt;
+                            &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;
+                            &lt;style&gt;
+                            h1 {
+                              color: orange;
+                            }
+                            &lt;/style&gt;
+                            &lt;/head&gt;
+                    </code>
+                </p>
+                <p class="example">
+                    example <br> However, if the internal style is defined <strong>before</strong> the link to the external style sheet, the &lt;h1&gt; elements will be <q>navy</q>
+                    <code>
+                        &lt;head &gt;
+                            &lt;style&gt;
+                            h1 {
+                              color: orange;
+                            }
+                            &lt;/style&gt;
+                            &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;
+                            &lt;/head&gt;
+                    </code>
+                    <a class="button trybutton" href="">Try it Yourself</a>
+
+                </p>
+            </p>
+            <p>
+                <h4>
+                    Cascading Order
+                </h4>
+                What style will be used when there is more than one style specified for an HTML element? All the styles in a page will <q>cascade</q> into a new <q>virtual</q> style sheet by the following rules, where number one has the highest priority:
+                <ol>
+                    <li>Inline style (inside an HTML element)</li>
+                    <li> External and internal style sheets (in the head section)</li>
+                    <li>Browser default</li>
+                </ol>
+                So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
+
+
+
+            </p>
+
+
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="comments">CSS Comments</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="colors">CSS Colors</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="backgrounds">CSS Backgrounds</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="borders">CSS Borders</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="margins">CSS Margins</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="padding">CSS Padding</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="height-width">CSS Height/Width</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="box-model">CSS Box Model</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="outline">CSS Outline</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="text">CSS Text</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="fonts">CSS Text</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="icons">CSS Icons</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="links">CSS Links</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="lists">CSS Lists</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="tables">CSS Tables</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="display">CSS Display</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="max-width">CSS Max-width</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="position">CSS Positiont</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="overflow">CSS Overflow</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="float">CSS Float</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="inline-block">CSS Inline-block</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="align">CSS Align</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="combinators">CSS Combinators</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="pseudo-class">CSS Pseudo-class</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="pseudo-element">CSS Pseudo-element</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="opacity">CSS Opacity</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="navigation-bar">CSS Navigation Bar</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="dropdowns">CSS Dropdowns</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="image-gallery">CSS Image Gallery</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="image-sprites">CSS Image Sprites</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="attr-selectors">CSS Attr Selectors</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="forms">CSS Forms</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="counters">CSS Counters</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="website-layout">CSS Website Layout</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="units">CSS Units</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+        <div class="main-section">
+            <h3 id="specificity">CSS Specificity</h3>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+            <a class="button pbutton" href="">Previous</a>
+            <a class="button nbutton" href="">Next</a>
+        </div>
+
+
+    </main>
+</body>
+
+</html>
